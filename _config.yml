@@ -1,0 +1,67 @@
+baseurl: ""
+url: "http://astrolojiyolcusu.com"
+
+theme_settings:
+  title: "Astroloji Yolcusu"
+  description: "Astroloji ve Esmalarla Şifa"
+  footer_text: "Yükseklere ulaşmak, yıldızların ruhunuzda saklı
+  kalmasıdır. Derinleri hayal edin, her rüya için hedef önünüze gelir.
+  &nbsp;<em><small>Ralph Vaull Starr</small></em>"
+
+  rss: true
+  email_address: astrolojiyolcusu@gmail.com
+  behance:
+  bitbucket:
+  dribbble:
+  facebook: bzeyneppb
+  flickr:
+  gitlab:
+  github:
+  google_plus:
+  instagram:
+  keybase:
+  linkedin:
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:
+  steam:
+  tumblr:
+  twitter:
+  vimeo:
+  wordpress:
+  youtube:
+
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: false
+  portfolio: false
+  search: true
+  tags: false
+  
+  str_follow_on: "Takip et"
+  str_rss_follow: "RSS akışını takip et"
+  str_email: "E-posta"
+  str_next_post: "SONRAKİ GÖNDERİ"
+  str_previous_post: "ÖNCEKİ GÖNDERİ"
+  str_next_page: "İleri"
+  str_previous_page: "Geri"
+  str_continue_reading: "Devamını oku"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+  post_navigation: true
+
+paginate: 5
+paginate_path: "blog/page:num"
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
