@@ -1,9 +1,10 @@
 baseurl: ""
 url: "http://www.astrolojiyolcusu.com"
 
+title: "Astroloji Yolcusu"
+description: "Astroloji ve Esmalarla Şifa"
+
 theme_settings:
-  title: "Astroloji Yolcusu"
-  description: "Astroloji ve Esmalarla Şifa"
   footer_text: "Yükseklere ulaşmak, yıldızların ruhunuzda saklı
   kalmasıdır. Derinleri hayal edin, her rüya için hedef önünüze gelir.
   &nbsp;<em><small>Ralph Vaull Starr</small></em>"
