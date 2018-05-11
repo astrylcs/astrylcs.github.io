@@ -3,7 +3,7 @@ layout: post
 title: Yeni Ay ve Uranüs Geçişi Burçlar
 ---
 
-## KOÇ BURÇLARI VE YÜKSLEN KOÇLAR
+## KOÇ BURÇLARI VE YÜKSELEN KOÇLAR
 
 Hem yeni ay hem Uranüs geçişi 2. Evinizde gerçekleşeceğinde ve bu etkinin hasadını 10 günlük zaman diliminde toplayacağınızı belirtmek sterim. Para kazanma fırsatları, yatırımlar üzerinden kazanma odaklı olacaksınız. Ev alabiliriniz.
 
@@ -57,17 +57,17 @@ Hem yeni ay hem Uranüs geçişi 6.evinize gerçekleşecek, günlük rutinlerini
 
 15 Mayıs gecesi dilediğiniz vakitte Ya-Kerim (270) çekmenizi öneririm.
 
-## OĞLAK VE YÜKSELEN OĞLAK
+## OĞLAK BURÇLARI VE YÜKSELEN OĞLAK
 Hem yeni ay hem Uranüs geçişi 5. Evinizde gerçekleşecek bu ev, Aşk, çocuklar, sanatsal faaliyetler, yaşamın eğlence dolu konuları Uranüs etkisi ile daha bir ani etkilerle hareketlenecektir. Aşk, bebek veya hobiler getirecektir. Ben derim ki piyango almayı, şans oyunları oynamayı deneyin derim. 
 
 15 Mayıs gecesi dilediğiniz vakitte YA-MUKTEDİR (744) çekmenizi öneririm.
 
-## KOVA VE YÜKSELEN KOVA
+## KOVA BURÇLARI VE YÜKSELEN KOVA
 Hem yeni ay hem Uranüs geçişi 4.eviniz aktifleşiyor. Aile, yuva, baba, atalar, anne, anneanne gibi ailenin büyükleri, geçmiş konuların gündeme gelmesi, evlenme yuva kurmakta dahil olmakla birlikte boşanmakta buna dahil, çocuk sahibi olmak ve ev almakta, ani gelişmeleri de içermektedir. Bu konular ile ilgili deneyimler yaşayabilirsiniz. 
 
 15 Mayıs gecesi dilediğiniz vakitte YA-KAİM (142) çekmenizi öneririm.
 
-## BALIK VE YÜKSELEN BALIK
+## BALIK BURÇLARI VE YÜKSELEN BALIK
 
 Hem yeni ay hem Uranüs geçişi 3.evinizde Uranüs gerçekleşiyor. 3. Ev konularının aktif olarak ani gelişmeler ile hayatınızda olacağı bu dönemde akrabalar, komşular, yakın çevre, sosyal medya, iletişim, arkadaşlar, konularında yeni sayfalar açılıyor sizler için. Çevreniz aracılığıyla çokça yeniliklere, değişimlere hazır olduğunuz gibi bu insanların hayatlarında güçlü değişimler yaşanacaktır.
 
