@@ -1,7 +1,1 @@
-/* globals $ */
-
-$(function () {
-  $('#pull').on('click', function (e) {
-    $('nav ul').slideToggle()
-  })
-})
+$(function(){$("#pull").on("click",function(l){$("nav ul").slideToggle()})});
