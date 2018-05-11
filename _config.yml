@@ -14,7 +14,7 @@ theme_settings:
   behance:
   bitbucket:
   dribbble:
-  facebook: bzeyneppb
+  facebook: bzeyneppb #
   flickr:
   gitlab:
   github:
@@ -33,7 +33,7 @@ theme_settings:
   wordpress:
   youtube:
 
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics:
   disqus_shortname:
   katex: false
   portfolio: false
