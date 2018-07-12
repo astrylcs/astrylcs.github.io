@@ -3,6 +3,8 @@ layout: post
 title: 13 temmuz tutulması ve Burçlara etkisi
 ---
 
+<iframe src="https://www.youtube.com/embed/MDdi5W_xghw" frameborder="0" allowfullscreen></iframe>
+
 > HER BİR BURCUN TUTULMANIN GERÇEKLEŞECEĞİ EV KONUSU İLE ALAKLI ESMASI VİDEODA BELİRTTİM.
 > GÜZELLİKLER SİZİ BULSUN.
 
@@ -13,6 +15,7 @@ title: 13 temmuz tutulması ve Burçlara etkisi
 * ARINMAK İSTEDİĞİMİZ HER NE VARSA BİZİ ÜZENLERİ DE BİR KAĞIDA YAZIYORUZ. VE YAKIYORUZ KÜLLERİNİ BOL SU AKITARAK, ONLARDAN ARTIK KURTULDUĞUMUZA DAİR OLUMLAMA YAPIYORUZ.
 
 ## VE TABİ Kİ...
+
 Tutulma anında Küsuf namazı kılınır. 2 rekattır.
 
 "Güneş tutulmasına küsûf, ay tutulmasına hüsûf denir. Peygamberimiz oğlu İbrâhim'in öldüğü gün güneş tutulması üzerine şöyle demiştir: "Ay ve güneş Allah'ın varlığını ve kudretini gösteren alâmetlerdir. Bunlar hiç kimsenin ölümünden veya yaşamasından/doğmasından dolayı tutulmazlar. Ay veya güneş tutulmasını gördüğünüz zaman, açılıncaya kadar namaz kılın, dua edin" (Buhârî, “Küsûf”, 1, 15)."
