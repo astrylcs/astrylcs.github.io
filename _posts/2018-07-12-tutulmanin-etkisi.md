@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 13 temmuz tutulması ve Burçlara etkisi
+title: 13 Temmuz tutulması ve Burçlara etkisi
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MDdi5W_xghw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
