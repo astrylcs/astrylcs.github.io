@@ -22,12 +22,18 @@ Tutulma anında Küsuf namazı kılınır. 2 rekattır.
 
 NOT: Güneş tutulmasında namaz kılmak sünnet-i müekkekedir. Okunacak esma ve dualar:
 
-312 kez Ya Rakiybu 
-75 kez Ya Muzillu 
-14 kez Ya Vehhab 
-100 kez Ya Gaffar 
-1020 kez Ya Aziymu Celle Celalühü 
-306 kez Ya Kahiru ya zel batşiş şedidi entellezi la yütakuntikamüh. 
+312 kez Ya Rakiybu
+
+75 kez Ya Muzillu
+
+14 kez Ya Vehhab
+
+100 kez Ya Gaffar
+
+1020 kez Ya Aziymu Celle Celalühü
+
+306 kez Ya Kahiru ya zel batşiş şedidi entellezi la yütakuntikamüh.
+
 7 kez Hasbiyallahu lâ ilâhe illâ Hû, Aleyhi tevekkeltu ve Huve rabbül arşıl azîm.
 
 Hangi dine inanca mensup olursak olalım tutulmalar da dua etmek bizleri yüceltir ve arındırır.
