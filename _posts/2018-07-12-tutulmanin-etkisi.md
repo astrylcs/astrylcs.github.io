@@ -3,7 +3,7 @@ layout: post
 title: 13 temmuz tutulması ve Burçlara etkisi
 ---
 
-<iframe src="https://www.youtube.com/embed/MDdi5W_xghw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MDdi5W_xghw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > HER BİR BURCUN TUTULMANIN GERÇEKLEŞECEĞİ EV KONUSU İLE ALAKLI ESMASI VİDEODA BELİRTTİM.
 > GÜZELLİKLER SİZİ BULSUN.
