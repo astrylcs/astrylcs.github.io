@@ -50,7 +50,7 @@ theme_settings:
   str_continue_reading: "Devamını oku"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
 
-  google_fonts: "Roboto:400,700,400i,700i"
+  google_fonts:
   post_navigation: true
 
 paginate: 5
