@@ -22,13 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 {% endcomment %}
 
-{% if site.theme_settings.footer_text %}
 <footer class="site-footer">
-    <p class="text">{{ site.theme_settings.footer_text }}</p>
-            <div class="footer-icons">
-                <ul>
-                {% include icons.html %}
-                </ul>
-            </div>
+<p class="text">{{ site.theme_settings.footer_text }}</p>
+<div class="footer-icons">
+<ul>
+{% include icons.html %}
+</ul>
+</div>
 </footer>
-{% endif %}
