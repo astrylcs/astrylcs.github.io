@@ -94,9 +94,8 @@
 }
 
 
-// To clear things when we float the element inisde nav and ul 
+/* To clear things when we float the element inisde nav and ul 
 .clear {
-    //*zoom: 1;
 
     &:after {
         clear: both;
@@ -109,7 +108,7 @@
     }
 }
 
-/* ---- Responsive ----
+// ---- Responsive ----
 
 @media (min-width: $break) {
     a#pull {
