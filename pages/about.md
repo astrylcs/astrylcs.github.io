@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Hakkında
-permalink: /about/
-# feature-img: "assets/img/main.jpg"
-# tags: [About, Test]
+permalink: /about
 ---
 
 ## Danışmanlık Sürecimiz Nasıl Oluyor?
