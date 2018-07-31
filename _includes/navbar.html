@@ -23,21 +23,12 @@ SOFTWARE.
 {% endcomment %}
 
 <header class="site-header">
-    
-    <!-- Logo and title -->
-	<div class="branding">
-		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.title }}</a>
-		</h1>
-	</div>
-    
-    <!-- Toggle menu -->
-    <nav class="clear">
-    <!-- <a id="pull" class="toggle" href="#">
-    <i class="fa fa-bars fa-lg"></i>
-    </a> -->
-    
-    <!-- Menu -->
+    <div class="branding">
+        <h1 class="site-title">
+            <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
+    </div>
+    <nav>
     <ul>
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
@@ -45,7 +36,7 @@ SOFTWARE.
             |
         </li>
         <li>
-            <a class="clear" href="{{ page.url | relative_url }}">
+            <a href="{{ page.url | relative_url }}">
                 <i class="material-icons">info_outline</i>
             </a>
         </li>
@@ -56,7 +47,7 @@ SOFTWARE.
             |
         </li>
         <li>
-            <a class="clear" href="{{ site.url }}{{ site.baseurl }}/search">
+            <a href="{{ site.url }}{{ site.baseurl }}/search">
                 <i class="material-icons">search</i>
             </a>
         </li>
@@ -66,13 +57,11 @@ SOFTWARE.
             |
         </li>
         <li>
-            <a class="clear" href="{{ site.url }}{{ site.baseurl }}/tags">
+            <a href="{{ site.url }}{{ site.baseurl }}/tags">
                 <i class="fa fa-tags" aria-hidden="true"></i>
             </a>
         </li>
         {% endif %}
-        
     </ul>
-        
-	</nav>
+    </nav>
 </header>
