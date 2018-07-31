@@ -22,14 +22,11 @@
  * SOFTWARE.
  */
 
-// Variables
-@import 'base/variables';
-
 // External
-@import 'external/reset';
-@import 'external/syntax';
+@import 'external/normalize';
 
 // Base
+@import 'base/variables';
 @import 'base/global';
 @import 'base/utility';
 
@@ -39,7 +36,6 @@
 @import 'layouts/page';
 @import 'layouts/tags';
 @import 'layouts/search';
-// @import 'layouts/portfolio';
 
 // Includes
 @import 'includes/footer';
