@@ -32,8 +32,7 @@ theme_settings:
   vimeo:
   wordpress:
   youtube: UChqfxzORYlvMezSVmQfo3IQ
-
-  google_analytics:
+  
   katex: false
   search: true
   
@@ -46,11 +45,10 @@ theme_settings:
   str_previous_page: "Geri"
   str_continue_reading: "Devamını oku"
   
-  google_fonts:
   post_navigation: true
 
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: ":num"
 
 markdown: kramdown
 
