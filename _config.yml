@@ -34,11 +34,8 @@ theme_settings:
   youtube: UChqfxzORYlvMezSVmQfo3IQ
 
   google_analytics:
-  disqus_shortname:
   katex: false
-  portfolio: false
   search: true
-  tags: false
   
   str_follow_on: "Takip et"
   str_rss_follow: "RSS akışını takip et"
@@ -48,8 +45,7 @@ theme_settings:
   str_next_page: "İleri"
   str_previous_page: "Geri"
   str_continue_reading: "Devamını oku"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
-
+  
   google_fonts:
   post_navigation: true
 
@@ -57,7 +53,6 @@ paginate: 5
 paginate_path: "blog/page:num"
 
 markdown: kramdown
-highlighter: rouge
 
 sass:
   sass_dir: _sass
