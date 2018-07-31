@@ -1,4 +1,3 @@
-baseurl: ""
 url: "https://www.astrolojiyolcusu.com"
 
 title: "Astroloji Yolcusu"
@@ -8,44 +7,23 @@ theme_settings:
   footer_text: "Yükseklere ulaşmak, yıldızların ruhunuzda saklı
   kalmasıdır. Derinleri hayal edin, her rüya için hedef önünüze gelir.
   &nbsp;<em><small>Ralph Vaull Starr</small></em>"
-
-  rss: true
   email_address: astrolojiyolcusu@gmail.com
-  behance:
-  bitbucket:
-  dribbble:
   facebook: astrolojiyolculugu
   flickr:
-  gitlab:
-  github:
   google_plus:
   instagram:
-  keybase:
   linkedin:
   pinterest:
   reddit:
-  soundcloud:
-  stack_exchange:
-  steam:
   tumblr:
   twitter:
   vimeo:
-  wordpress:
   youtube: UChqfxzORYlvMezSVmQfo3IQ
   
-  katex: false
-  search: true
-  
-  str_follow_on: "Takip et"
-  str_rss_follow: "RSS akışını takip et"
-  str_email: "E-posta"
   str_next_post: "SONRAKİ GÖNDERİ"
   str_previous_post: "ÖNCEKİ GÖNDERİ"
   str_next_page: "İleri"
   str_previous_page: "Geri"
-  str_continue_reading: "Devamını oku"
-  
-  post_navigation: true
 
 paginate: 5
 paginate_path: ":num"
