@@ -25,43 +25,24 @@ SOFTWARE.
 <header class="site-header">
     <div class="branding">
         <h1 class="site-title">
-            <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a href="/">{{ site.title }}</a>
         </h1>
     </div>
     <nav>
     <ul>
-        {% for page in site.pages %}
-        {% if page.title and page.hide != true %}
-        <li class="separator">
-            |
-        </li>
         <li>
-            <a href="{{ page.url | relative_url }}">
+            <a href="{{ site.url }}/about">
                 <i class="material-icons">info_outline</i>
             </a>
         </li>
-        {% endif %}
-        {% endfor %}
-        {% if site.theme_settings.search %}
         <li class="separator">
             |
         </li>
         <li>
-            <a href="{{ site.url }}{{ site.baseurl }}/search">
+            <a href="{{ site.url }}/search">
                 <i class="material-icons">search</i>
             </a>
         </li>
-        {% endif %}
-        {% if site.theme_settings.tags %}
-        <li class="separator">
-            |
-        </li>
-        <li>
-            <a href="{{ site.url }}{{ site.baseurl }}/tags">
-                <i class="fa fa-tags" aria-hidden="true"></i>
-            </a>
-        </li>
-        {% endif %}
     </ul>
     </nav>
 </header>
