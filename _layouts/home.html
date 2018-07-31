@@ -26,8 +26,7 @@ layout: default
 
 <div class="home">
   
-  <div id="main" class="call-out"
-  style="background-image: url('{{ site.baseurl }}/assets/main.jpg')">
+  <div id="main" class="call-out" style="background-image: url('/assets/main.jpg')">
     <p>{{ site.description }}</p>
   </div>
   
@@ -36,13 +35,13 @@ layout: default
     <div class="post-teaser">
       {% if post.thumbnail %} 
       <div class="post-img">
-         <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
+         <img src="{{ post.thumbnail }}">
       </div>
       {% endif %}
       <span>
           <header>
             <h1>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              <a class="post-link" href="{{ post.url }}">
                 {{ post.title }}
               </a>
             </h1>
@@ -68,9 +67,6 @@ layout: default
           </header>
           <div class="excerpt">
             {{ post.content | strip_html | truncate: "250" }}
-            <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
-              {{ site.theme_settings.str_continue_reading }}
-            </a>-->
           </div>
       </span>
     </div>
@@ -80,13 +76,13 @@ layout: default
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+    <a href="{{ paginator.previous_page_path | replace: '//', '/' }}" class="button" >
       <i class="fa fa-chevron-left"></i>
       {{ site.theme_settings.str_previous_page }}
     </a>
     {% endif %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+    <a href="{{ paginator.next_page_path | replace: '//', '/' }}" class="button" >
       {{ site.theme_settings.str_next_page }}
       <i class="fa fa-chevron-right"></i>
     </a>
