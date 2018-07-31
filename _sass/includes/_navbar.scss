@@ -96,7 +96,7 @@
 
 // To clear things when we float the element inisde nav and ul 
 .clear {
-    *zoom: 1;
+    //*zoom: 1;
 
     &:after {
         clear: both;
