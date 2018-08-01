@@ -131,16 +131,9 @@ dd {
 p,
 ol,
 ul,
-dl,
-.math-display {
+dl {
     line-height: 1.5;
     margin-bottom: 1em;
-}
-
-// KaTeX math display
-.math-display {
-    display: inline-block;
-    width: 100%;
 }
 
 // Lists within lists
@@ -177,8 +170,8 @@ img,
 embed,
 object,
 video {
-    max-width: 100%;
-    padding: 0 10%;
+    // max-width: 100%;
+    // padding: 0 10%;
 }
 
 img[align=left] {
