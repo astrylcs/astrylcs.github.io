@@ -178,23 +178,20 @@ img[align=right] {
 /* ---- Responsive ---- */
 
 @media screen and (max-width: $sm-break) {
-    h1, h2, h3, h4, p, li {
-        font-size: 80%;
-    } /*
     h1 {
-        font-size: 1.5em;
+        font-size: 0.8 * 2em;
     }
     h2 {
-        font-size: 1.25em;
+        font-size: 0.8 * 1.5em;
     }
     h3 {
-        font-size: 1em;
+        font-size: 0.8 * 1.17em;
     }
     h4 {
-        font-size: 0.75em;
+        font-size: 0.8 * 1em;
     }
     p,
     li {
-        font-size: 0.75em;
-    } */
+        font-size: 0.8 * 1em;
+    }
 }
