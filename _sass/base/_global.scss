@@ -176,8 +176,11 @@ img[align=right] {
 }
 
 /* ---- Responsive ---- */
-/*
+
 @media screen and (max-width: $sm-break) {
+    h1, h2, h3, h4, p, li {
+        font-size: 80%;
+    } /*
     h1 {
         font-size: 1.5em;
     }
@@ -193,5 +196,5 @@ img[align=right] {
     p,
     li {
         font-size: 0.75em;
-    }
-} */
+    } */
+}
