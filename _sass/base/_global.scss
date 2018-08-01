@@ -68,19 +68,19 @@ h6 {
 }
 
 h1 {
-    font-size: 2.5em;
-}
-
-h2 {
     font-size: 2em;
 }
 
-h3 {
+h2 {
     font-size: 1.5em;
 }
 
-h4 {
+h3 {
     font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
 }
 
 blockquote {
@@ -177,19 +177,19 @@ img[align=right] {
 
 @media screen and (max-width: $sm-break) {
     h1 {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
     h2 {
-        font-size: 1.3em;
+        font-size: 1.25em;
     }
     h3 {
         font-size: 1em;
     }
     h4 {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
     p,
     li {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
 }
