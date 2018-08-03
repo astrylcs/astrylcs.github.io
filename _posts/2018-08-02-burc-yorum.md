@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ağustos Ayı Burç Yorumları
 ---
 
