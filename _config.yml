@@ -25,6 +25,13 @@ theme_settings:
   str_next_page: "İleri"
   str_previous_page: "Geri"
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: post
+
 paginate: 5
 paginate_path: ":num"
 
