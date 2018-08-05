@@ -144,9 +144,7 @@
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.next.title }}</h2>
                                         </header>
-                                        <section class="post-card-excerpt">
-                                            <p>{{ page.next.content | strip_html | truncatewords: 33, "" }}</p>
-                                        </section>
+                                        <section class="post-card-excerpt"></section>
                                     </a>
                                     <footer class="post-card-meta"></footer>
                                 </div>
@@ -167,9 +165,7 @@
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.previous.title }}</h2>
                                         </header>
-                                        <section class="post-card-excerpt">
-                                            <p>{{ page.previous.content | strip_html | truncatewords: 33, "" }}</p>
-                                        </section>
+                                        <section class="post-card-excerpt"></section>
                                     </a>
                                     <footer class="post-card-meta"></footer>
                                 </div>
