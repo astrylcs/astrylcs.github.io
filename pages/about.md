@@ -13,9 +13,7 @@ Doğum haritası analizinin görüşmelerini e-posta ile size göndereceğim for
 
 Işığımız bol olsun. Sevgiler.
 
-E-posta: [{{ site.email_address }}](mailto:{{ site.email_address }})
-
-Facebook: [Astroloji Yolculuğu]({{ site.facebook_page }})
-
+E-posta: [{{ site.email_address }}](mailto:{{ site.email_address }}) <br>
+Facebook: [Astroloji Yolculuğu]({{ site.facebook_page }}) <br>
 Youtube: [Astroloji Yolcusu]({{ site.youtube_page }})
 
