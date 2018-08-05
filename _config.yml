@@ -3,11 +3,14 @@ url: "https://www.astrolojiyolcusu.com"
 title: "Astroloji Yolcusu"
 description: "Astroloji ve Esmalarla Şifa"
 
+email_address: astrolojiyolcusu@gmail.com
+facebook_page: https://www.facebook.com/astrolojiyolculugu
+youtube_page: https://www.youtube.com/channel/UChqfxzORYlvMezSVmQfo3IQ
+
 theme_settings:
   footer_text: "Yükseklere ulaşmak, yıldızların ruhunuzda saklı
   kalmasıdır. Derinleri hayal edin, her rüya için hedef önünüze gelir.
   &nbsp;<em><small>Ralph Vaull Starr</small></em>"
-  email_address: astrolojiyolcusu@gmail.com
   facebook: astrolojiyolculugu
   flickr:
   google_plus:
