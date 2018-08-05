@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-    <style>iframe{width:100vw;height:calc(100vw*.5625);}</style>
+    <style>.yt-container{position:relative;width:100%;padding-top:56.25%;}
+.yt-container iframe{position:absolute;width:100%;height:100%;top:0;left:0;}</style>
     {% seo %}
 </head>
 <body class="{{ page.class }}">
@@ -83,7 +84,7 @@
                         <header class="post-full-header">
                             <section class="post-full-meta">
                                 {% if page.tag %}
-                                    <a>{{ page.tag | upcase }}</a>
+                                    <a>{{ page.tag }}</a>
                                 {% endif %}
                             </section>
                             <h1 class="post-full-title">{{ page.title }}</h1>
@@ -109,7 +110,7 @@
                             <article class="read-next-card" style="background-image: url({{ site.image }})">
                                 <header class="read-next-card-header">
                                     <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
-                                    <h3 class="read-next-card-header-title"><a>{{ page.tag | capitalize }}</a></h3>
+                                    <h3 class="read-next-card-header-title"><a>{{ page.tag }}</a></h3>
                                 </header>
                                 <div class="read-next-divider">
                                     <svg viewBox="0 0 24 24">
@@ -140,7 +141,7 @@
                                     <a class="post-card-content-link" href="{{ page.next.url }}">
                                         <header class="post-card-header">
                                             {% if page.next.tag %}
-                                                <span class="post-card-tags">{{ page.next.tag | capitalize }}</span>
+                                                <span class="post-card-tags">{{ page.next.tag }}</span>
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.next.title }}</h2>
                                         </header>
@@ -163,7 +164,7 @@
                                     <a class="post-card-content-link" href="{{ page.previous.url }}">
                                         <header class="post-card-header">
                                             {% if page.previous.tag %}
-                                                <span class="post-card-tags">{{ page.previous.tag | capitalize }}</span>
+                                                <span class="post-card-tags">{{ page.previous.tag }}</span>
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.previous.title }}</h2>
                                         </header>
