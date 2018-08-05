@@ -1,4 +1,6 @@
 ---
+image: zodiac
+tag: AĞUSTOS 2018
 title: Ağustos Ayı Burç Yorumları
 ---
 

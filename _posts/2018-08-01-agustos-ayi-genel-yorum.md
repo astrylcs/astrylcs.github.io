@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: AĞUSTOS 2018
 title: Ağustos Ayı Genel Etkileri
 ---
 
