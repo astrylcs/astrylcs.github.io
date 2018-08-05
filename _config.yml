@@ -7,43 +7,20 @@ email_address: astrolojiyolcusu@gmail.com
 facebook_page: https://www.facebook.com/astrolojiyolculugu
 youtube_page: https://www.youtube.com/channel/UChqfxzORYlvMezSVmQfo3IQ
 
-theme_settings:
-  footer_text: "Yükseklere ulaşmak, yıldızların ruhunuzda saklı
-  kalmasıdır. Derinleri hayal edin, her rüya için hedef önünüze gelir.
-  &nbsp;<em><small>Ralph Vaull Starr</small></em>"
-  facebook: astrolojiyolculugu
-  flickr:
-  google_plus:
-  instagram:
-  linkedin:
-  pinterest:
-  reddit:
-  tumblr:
-  twitter:
-  vimeo:
-  youtube: UChqfxzORYlvMezSVmQfo3IQ
-  
-  str_next_post: "SONRAKİ GÖNDERİ"
-  str_previous_post: "ÖNCEKİ GÖNDERİ"
-  str_next_page: "İleri"
-  str_previous_page: "Geri"
+image: /assets/img/cover/960797.jpg
 
 defaults:
   -
     scope:
       path: ""
     values:
-      layout: post
+      layout: default
+      class: post-template
 
-paginate: 5
-paginate_path: ":num"
-
-markdown: kramdown
-
-sass:
-  sass_dir: _sass
-  style: :compressed
+str_about: Hakkında
+str_not_found: Sayfa bulunamadı
 
 plugins:
-  - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
+
