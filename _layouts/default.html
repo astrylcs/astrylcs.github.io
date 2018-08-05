@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    {% seo %}
+</head>
+<body class="{{ page.class }}">
+    <div class="site-wrapper">
+        <header class="site-header outer" {% if page.class == 'home-template' %}style="background-image: url({{ site.image }})"{% endif %}>
+            <div class="inner">
+                {% if page.class == 'home-template' %}
+                    <div class="site-header-content">
+                        <h1 class="site-title">{{ site.title }}</h1>
+                        <h2 class="site-description">{{ site.description }}</h2>
+                    </div>
+                {% endif %}
+                <nav class="site-nav">
+                    <div class="site-nav-left">
+                        {% if page.class != 'home-template' %}
+                            <a class="site-nav-logo" href="{{ site.url }}">{{ site.title }}</a>
+                        {% else %}
+                            <ul class="nav" role="menu">
+                                <li class="nav-about" role="menuitem"><a href="/about">{{ site.str_about }}</a></li>
+                            </ul>
+                        {% endif %}
+                    </div>
+                    <div class="site-nav-right">
+                        <div class="social-links">
+                            <a class="social-link" href="{{ site.facebook_page }}" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="{{ site.youtube_page }}" target="_blank" rel="noopener">
+                                <svg viewBox="2 2 20 20">
+                                    <path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main id="site-main" class="site-main outer" role="main">
+            <div class="inner">
+                {% if page.class == 'home-template' %}
+                    <div class="post-feed">
+                        {% for post in site.posts %}
+                            <article class="post-card {{ page.class }} {% unless post.image %}no-image{% endunless %}">
+                                {% if post.image %}
+                                    <a class="post-card-image-link" href="{{ post.url }}">
+                                        <div class="post-card-image" style="background-image: url({% include image.html page=post %})"></div>
+                                    </a>
+                                {% endif %}
+                                <div class="post-card-content">
+                                    <a class="post-card-content-link" href="{{ post.url }}">
+                                        <header class="post-card-header">
+                                            {% if post.tag %}
+                                                <span class="post-card-tags">{{ post.tag | capitalize }}</span>
+                                            {% endif %}
+                                            <h2 class="post-card-title">{{ post.title }}</h2>
+                                        </header>
+                                        <section class="post-card-excerpt">
+                                            <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
+                                        </section>
+                                    </a>
+                                    <footer class="post-card-meta">
+                                    </footer>
+                                </div>
+                            </article>
+                        {% endfor %}
+                    </div>
+                {% elsif page.class == 'error-template' %}
+                    <section class="error-message">
+                        <h1 class="error-code">404</h1>
+                        <p class="error-description">{{ site.str_not_found }}</p>
+                    </section>
+                {% else %}
+                    <article class="post-full {% unless page.image %}no-image{% endunless %}">
+                        <header class="post-full-header">
+                            <section class="post-full-meta">
+                                {% if page.tag %}
+                                    <a>{{ page.tag | upcase }}</a>
+                                {% endif %}
+                            </section>
+                            <h1 class="post-full-title">{{ page.title }}</h1>
+                        </header>
+                        {% if page.image %}
+                            <figure class="post-full-image" style="background-image: url({% include image.html page=page %})"></figure>
+                        {% endif %}
+                        <section class="post-full-content">
+                            <div class="kg-card-markdown">
+                                {{ content }}
+                            </div>
+                        </section>
+                        <footer class="post-full-footer"></footer>
+                    </article>
+                {% endif %}
+            </div>
+        </main>
+        {% unless page.nosuggestions %}
+            <aside class="read-next outer">
+                <div class="inner">
+                    <div class="read-next-feed">
+                        {% if page.tag %}
+                            <article class="read-next-card" style="background-image: url({{ site.image }})">
+                                <header class="read-next-card-header">
+                                    <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
+                                    <h3 class="read-next-card-header-title"><a>{{ page.tag | capitalize }}</a></h3>
+                                </header>
+                                <div class="read-next-divider">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+                                    </svg>
+                                </div>
+                                <div class="read-next-card-content">
+                                    <ul>
+                                        {% for post in site.posts %}
+                                            {% if post.tag == page.tag %}
+                                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <footer class="read-next-card-footer">
+                                </footer>
+                            </article>
+                        {% endif %}
+                        {% if page.next %}
+                            <article class="post-card {{ page.next.class }} {% unless page.next.image %}no-image{% endunless %}">
+                                {% if page.next.image %}
+                                    <a class="post-card-image-link" href="{{ page.next.url }}">
+                                        <div class="post-card-image" style="background-image: url({% include image.html page=page.next %})"></div>
+                                    </a>
+                                {% endif %}
+                                <div class="post-card-content">
+                                    <a class="post-card-content-link" href="{{ page.next.url }}">
+                                        <header class="post-card-header">
+                                            {% if page.next.tag %}
+                                                <span class="post-card-tags">{{ page.next.tag | capitalize }}</span>
+                                            {% endif %}
+                                            <h2 class="post-card-title">{{ page.next.title }}</h2>
+                                        </header>
+                                        <section class="post-card-excerpt">
+                                            <p>{{ page.next.content | strip_html | truncatewords: 33, "" }}</p>
+                                        </section>
+                                    </a>
+                                    <footer class="post-card-meta"></footer>
+                                </div>
+                            </article>
+                        {% endif %}
+                        {% if page.previous %}
+                            <article class="post-card {{ page.previous.class }} {% unless page.previous.image %}no-image{% endunless %}">
+                                {% if page.previous.image %}
+                                    <a class="post-card-image-link" href="{{ page.previous.url }}">
+                                        <div class="post-card-image" style="background-image: url({% include image.html page=page.previous %})"></div>
+                                    </a>
+                                {% endif %}
+                                <div class="post-card-content">
+                                    <a class="post-card-content-link" href="{{ page.previous.url }}">
+                                        <header class="post-card-header">
+                                            {% if page.previous.tag %}
+                                                <span class="post-card-tags">{{ page.previous.tag | capitalize }}</span>
+                                            {% endif %}
+                                            <h2 class="post-card-title">{{ page.previous.title }}</h2>
+                                        </header>
+                                        <section class="post-card-excerpt">
+                                            <p>{{ page.previous.content | strip_html | truncatewords: 33, "" }}</p>
+                                        </section>
+                                    </a>
+                                    <footer class="post-card-meta"></footer>
+                                </div>
+                            </article>
+                        {% endif %}
+                    </div>
+                </div>
+            </aside>
+        {% endunless %}
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="{{ site.url }}">{{ site.title }}</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/about">{{ site.str_about }}</a>
+                    <a href="{{ site.facebook_page }}" target="_blank" rel="noopener">Facebook</a>
+                    <a href="{{ site.youtube_page }}" target="_blank" rel="noopener">Youtube</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
