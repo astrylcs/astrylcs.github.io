@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: TEMMUZ 2018
 title: Temmuz Ayı ve Burç Yorumları
 ---
 

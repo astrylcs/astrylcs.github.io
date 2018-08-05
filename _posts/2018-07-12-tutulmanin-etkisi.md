@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: TEMMUZ 2018
 title: 13 Temmuz tutulması ve Burçlara etkisi
 ---
 

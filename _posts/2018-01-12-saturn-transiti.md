@@ -1,5 +1,6 @@
 ---
-layout: post
+image: saturn
+tag: GENEL
 title: Satürn Transiti
 ---
 

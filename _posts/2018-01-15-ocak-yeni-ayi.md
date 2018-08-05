@@ -1,5 +1,6 @@
 ---
-layout: post
+image: new
+tag: OCAK 2018
 title: Ocak Yeni Ayı
 ---
 

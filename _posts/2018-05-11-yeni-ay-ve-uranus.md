@@ -1,5 +1,6 @@
 ---
-layout: post
+image: new
+tag: MAYIS 2018
 title: Yeni Ay ve Uranüs Geçişi Burçlar
 ---
 

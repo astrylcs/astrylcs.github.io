@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: 2018
 title: 2018 Genel Yorum
 ---
 

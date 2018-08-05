@@ -1,5 +1,6 @@
 ---
-layout: post
+image: news
+tag: HABERLER
 title: Haber06 gazetesine vermiş olduğumuz röportaj
 ---
 

@@ -1,5 +1,6 @@
 ---
-layout: post
+image: zodiac
+tag: AY TUTULMASI
 title: Ay Tutulmasının ve Merkür Retrosunun Burçlara Etkisi
 ---
 

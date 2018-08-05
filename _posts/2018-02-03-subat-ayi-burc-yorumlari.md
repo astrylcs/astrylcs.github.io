@@ -1,5 +1,6 @@
 ---
-layout: post
+image: zodiac
+tag: ŞUBAT 2018
 title: Şubat 2018 Burç Yorumları Ve Güneş Tutulmasının Burçlara Etkileri
 ---
 

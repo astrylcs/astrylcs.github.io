@@ -1,5 +1,6 @@
 ---
-layout: post
+image: lunar
+tag: AY TUTULMASI
 title: Ay Tutulması ve Merkür Retrosu Genel Etkileri
 ---
 

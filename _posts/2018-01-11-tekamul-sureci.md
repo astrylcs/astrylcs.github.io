@@ -1,5 +1,6 @@
 ---
-layout: post
+image: crescent
+tag: GENEL
 title: Tekamül Süreci
 ---
 

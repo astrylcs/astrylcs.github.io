@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: HAZİRAN 2018
 title: Haziran Ayı
 ---
 

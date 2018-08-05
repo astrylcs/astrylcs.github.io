@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: NİSAN 2018
 title: Nisan Ayı Genel Yorumlar
 ---
 

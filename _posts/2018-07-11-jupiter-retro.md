@@ -1,5 +1,6 @@
 ---
-layout: post
+image: jupiter
+tag: RETROLAR
 title: Jüpiter Retrosu bitti, burçlara etkisi
 ---
 

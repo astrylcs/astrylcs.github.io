@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: ŞUBAT 2018
 title: Şubat 2018 Genel Yorum
 ---
 

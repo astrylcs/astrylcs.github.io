@@ -1,5 +1,6 @@
 ---
-layout: post
+image: moon
+tag: GENEL
 title: Ay Boşlukta Ne Demektir?
 ---
 

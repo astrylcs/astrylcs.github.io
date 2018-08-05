@@ -1,5 +1,6 @@
 ---
-layout: post
+image: stars
+tag: MART 2018
 title: Mart 2018'de Gökyüzü Bize Ne Söyler
 ---
 
