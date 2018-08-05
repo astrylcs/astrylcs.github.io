@@ -1,5 +1,5 @@
 ---
-image: new
+image: newmoon
 tag: MAYIS 2018
 title: Yeni Ay ve Uranüs Geçişi Burçlar
 ---
