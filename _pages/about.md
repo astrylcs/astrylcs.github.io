@@ -2,7 +2,7 @@
 image: chart
 title: Hakkında
 nosuggestions: true
-permalink: /about
+permalink: /about/
 ---
 
 Yaşadığımız hayatı bir **sahne** gibi düşünürsek, doğum haritası sizin bu dünya **sahnesine** giriş anınızda çekilmiş fotoğrafımızdır. Bu fotoğraf size; hayat dediğimiz bu **sahnede** neler yaşayacağınıza ile ilgili genel bilgiler verir. Engelleriniz ve fırsatlarınız nelerdir, engellerinizi nasıl aşarsınız, fırsatlarınızı nasıl kullanırsınız bunları anlatır.
