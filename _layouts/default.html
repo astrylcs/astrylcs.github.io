@@ -21,7 +21,7 @@
                 <nav class="site-nav">
                     <div class="site-nav-left">
                         {% if page.class != 'home-template' %}
-                            <a class="site-nav-logo" href="{{ site.url }}">{{ site.title }}</a>
+                            <a class="site-nav-logo" href="/">{{ site.title }}</a>
                         {% else %}
                             <ul class="nav" role="menu">
                                 <li role="menuitem"><a href="/about">{{ site.str_about }}</a></li>
@@ -179,7 +179,7 @@
         {% endunless %}
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{ site.url }}">{{ site.title }}</a></section>
+                <section class="copyright"><a href="/">{{ site.title }}</a></section>
                 <nav class="site-footer-nav">
                     <a href="/about">{{ site.str_about }}</a>
                     <a href="/hizmetler">{{ site.str_services }}</a>
