@@ -18,7 +18,6 @@ defaults:
       class: post-template
 
 str_about: Hakkında
-str_services:
 str_not_found: Sayfa bulunamadı
 
 plugins:
