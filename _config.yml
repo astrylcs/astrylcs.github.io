@@ -18,10 +18,12 @@ defaults:
       layout: default
       class: post-template
 
+sass:
+  style: compressed
+
 str_about: Hakkında
 str_not_found: Sayfa bulunamadı
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
