@@ -8,8 +8,9 @@ Replace
 1. @import "global.css"; => {% include global.scss %}
 
 Remove
-1. 7.1. Subscribe Form
-2. 10. Subscribe Overlay
+1. body { background: #f4f8fb; }
+2. 7.1. Subscribe Form
+3. 10. Subscribe Overlay
 
 */
 
@@ -45,10 +46,6 @@ production stylesheet in assets/built/screen.css
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 {% include global.scss %}
-
-body {
-    background: #f4f8fb;
-}
 
 .img {
     display: block;
