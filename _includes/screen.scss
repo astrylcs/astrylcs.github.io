@@ -1,3 +1,16 @@
+/* Casper 2.6.3 | Copyright (c) 2013-2018 Ghost Foundation | The MIT License */
+
+/* Applied Commits
+
+Add
+
+Replace
+1. @import "global.css"; => {% include global.scss %}
+
+Remove
+
+*/
+
 /* Table of Contents
 /* ------------------------------------------------------------
 
@@ -29,7 +42,7 @@ production stylesheet in assets/built/screen.css
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
-@import "global.css";
+{% include global.scss %}
 
 body {
     background: #f4f8fb;
