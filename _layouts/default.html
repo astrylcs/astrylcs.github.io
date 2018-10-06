@@ -69,12 +69,7 @@
                                             {% endif %}
                                             <h2 class="post-card-title">{{ post.title }}</h2>
                                         </header>
-                                        <section class="post-card-excerpt">
-                                            <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
-                                        </section>
                                     </a>
-                                    <footer class="post-card-meta">
-                                    </footer>
                                 </div>
                             </article>
                         {% endfor %}
@@ -87,11 +82,11 @@
                 {% else %}
                     <article class="post-full {% unless page.image %}no-image{% endunless %}">
                         <header class="post-full-header">
-                            <section class="post-full-meta">
+                            <div class="post-full-meta">
                                 {% if page.tag %}
                                     <a>{{ page.tag }}</a>
                                 {% endif %}
-                            </section>
+                            </div>
                             <h1 class="post-full-title">{{ page.title }}</h1>
                         </header>
                         {% if page.image %}
@@ -102,7 +97,6 @@
                                 {{ content }}
                             </div>
                         </section>
-                        <footer class="post-full-footer"></footer>
                     </article>
                 {% endif %}
             </div>
@@ -131,8 +125,6 @@
                                         {% endfor %}
                                     </ul>
                                 </div>
-                                <footer class="read-next-card-footer">
-                                </footer>
                             </article>
                         {% endif %}
                         {% if page.next %}
@@ -150,9 +142,7 @@
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.next.title }}</h2>
                                         </header>
-                                        <section class="post-card-excerpt"></section>
                                     </a>
-                                    <footer class="post-card-meta"></footer>
                                 </div>
                             </article>
                         {% endif %}
@@ -171,9 +161,7 @@
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.previous.title }}</h2>
                                         </header>
-                                        <section class="post-card-excerpt"></section>
                                     </a>
-                                    <footer class="post-card-meta"></footer>
                                 </div>
                             </article>
                         {% endif %}
@@ -183,7 +171,7 @@
         {% endunless %}
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="/">{{ site.title }}</a></section>
+                <div class="copyright"><a href="/">{{ site.title }}</a></div>
                 <nav class="site-footer-nav">
                     <a href="/about">{{ site.str_about }}</a>
                     <a href="{{ site.facebook_page }}" target="_blank" rel="noopener">Facebook</a>
