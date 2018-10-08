@@ -1,5 +1,5 @@
 ---
-image: saturn
+image: stars
 tag: GENEL
 title: Satürn Transiti
 ---
