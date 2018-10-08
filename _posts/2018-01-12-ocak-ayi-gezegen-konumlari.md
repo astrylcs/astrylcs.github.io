@@ -1,5 +1,5 @@
 ---
-image: planets
+image: stars
 tag: OCAK 2018
 title: Ocak Ayı Gezegen Konumları
 ---
