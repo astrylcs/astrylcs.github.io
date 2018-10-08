@@ -1,5 +1,5 @@
 ---
-image: newmoon
+image: stars
 tag: OCAK 2018
 title: Ocak Yeni Ayı
 ---
