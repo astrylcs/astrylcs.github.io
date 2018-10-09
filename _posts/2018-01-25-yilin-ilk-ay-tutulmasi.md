@@ -1,5 +1,5 @@
 ---
-image: lunar
+image: stars
 tag: OCAK 2018
 title: 31 Ocak Yılın İlk Ay Tutulması ve Burçlara Etkisi
 ---
