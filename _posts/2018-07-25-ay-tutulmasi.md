@@ -1,6 +1,6 @@
 ---
 image: 5_gBP1xeL3Q
-tag: AY TUTULMASI
+tag: TEMMUZ 2018
 title: Ay Tutulması ve Merkür Retrosu Genel Etkileri
 ytimg: true
 ---
