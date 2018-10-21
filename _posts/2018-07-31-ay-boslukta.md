@@ -1,6 +1,6 @@
 ---
 image: 4sagKY86bKI
-tag: GENEL
+tag: TEMMUZ 2018
 title: Ay Boşlukta Ne Demektir?
 ytimg: true
 ---
