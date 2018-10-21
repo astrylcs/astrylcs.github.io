@@ -53,6 +53,7 @@
         <main class="site-main outer">
             <div class="inner">
                 {% if page.class == 'home-template' %}
+                    {{ content }}
                     <div class="post-feed">
                         {% for post in site.posts %}
                             <article class="post-card {{ page.class }} {% unless post.image %}no-image{% endunless %}">
