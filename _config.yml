@@ -26,4 +26,3 @@ str_not_found: Sayfa bulunamadı
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
