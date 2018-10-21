@@ -1,6 +1,6 @@
 ---
 image: mu4zVRGiQfc
-tag: RETROLAR
+tag: TEMMUZ 2018
 title: Jüpiter Retrosu bitti, burçlara etkisi
 ytimg: true
 ---
