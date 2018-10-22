@@ -1,0 +1,25 @@
+---
+class: post-template
+---
+{%- assign zodiac = "
+♈ Koç Burcu ve Yükselen Koçlar,
+♉ a,
+♊ b,
+♋ c,
+♌ d,
+♍ e,
+♎ f,
+♏ g,
+♐ h,
+♑ i,
+♒ j,
+♓ k,
+⛎ l
+" | split: "," -%}
+
+{%- for i in zodiac -%}
+<a>{{ i }}</a>
+{%- endfor -%}
+
+<script>
+</script>
