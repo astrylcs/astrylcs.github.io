@@ -10,7 +10,7 @@
 </head>
 <body class="{{ page.class }}">
     <div class="site-wrapper">
-        <header class="site-header outer" {% if page.class == 'home-template' %}style="background-image: url({{ site.image }})"{% endif %}>
+        <header class="site-header outer" {% if page.class == 'home-template' %}style="background-image: url(/cover.jpg)"{% endif %}>
             <div class="inner">
                 {% if page.class == 'home-template' %}
                     <div class="site-header-content">
@@ -105,7 +105,7 @@
                 <div class="inner">
                     <div class="read-next-feed">
                         {% if page.tag %}
-                            <article class="read-next-card" style="background-image: url({{ site.image }})">
+                            <article class="read-next-card" style="background-image: url(/cover.jpg)">
                                 <header class="read-next-card-header">
                                     <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
                                     <h3 class="read-next-card-header-title"><a>{{ page.tag }}</a></h3>
