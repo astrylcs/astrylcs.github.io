@@ -475,7 +475,7 @@ h6 {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: darken($darkgrey, 5%) no-repeat center center;
+    background: #000 no-repeat center center;
     background-size: cover;
 }
 
@@ -1417,7 +1417,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: darken($darkgrey, 15%);
+    background: #000;
 }
 
 .site-footer-content {
