@@ -18,7 +18,19 @@ class: post-template
 " | split: "," -%}
 
 {%- for i in zodiac -%}
-<a>{{ i }}</a>
+<div id="select">
+<article class="post-card no-image">
+<div class="post-card-content">
+<a class="post-card-content-link" href="#">
+<header class="post-card-header">
+<h2 class="post-card-title">
+{{ i }}
+</h2>
+</header>
+</a>
+</div>
+</article>
+</div>
 {%- endfor -%}
 
 <script>
