@@ -2,9 +2,10 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<title>{{ site.name }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="canonical" href="{{ site.url }}">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="description" content="{{ site.description }}"/>
-<link rel="canonical" href="{{ site.url }}"/>
 <style type="text/css">{% capture style %}{% include style.scss %}{% endcapture %}{{ style | scssify }}</style>
 {% seo %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127192488-1"></script>
