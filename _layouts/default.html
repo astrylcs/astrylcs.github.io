@@ -76,10 +76,7 @@
                         {% endfor %}
                     </div>
                 {% elsif page.class == 'error-template' %}
-                    <section class="error-message">
-                        <h1 class="error-code">404</h1>
-                        <p class="error-description">{{ site.str_not_found }}</p>
-                    </section>
+                    {{ content }}
                 {% else %}
                     <article class="post-full {% unless page.image %}no-image{% endunless %}">
                         <header class="post-full-header">
