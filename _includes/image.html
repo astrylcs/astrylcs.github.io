@@ -1,4 +1,7 @@
-{%- if include.page.ytimg -%}
+{%- assign first_char = include.page.image | slice: 0 -%}
+{%- if first_char == "/" -%}
+{{ include.page.image }}
+{%- elsif include.page.ytimg -%}
 https://i3.ytimg.com/vi/{{ include.page.image }}/hqdefault.jpg
 {%- else -%}
 {%- assign images = site.static_files | where_exp: "it", "it.path contains include.page.image" -%}
