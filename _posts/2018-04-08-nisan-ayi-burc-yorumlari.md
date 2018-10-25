@@ -1,5 +1,5 @@
 ---
-image: zodiac
+image: stars
 tag: NİSAN 2018
 title: Nisan Ayı Burç Yorumları
 ---
