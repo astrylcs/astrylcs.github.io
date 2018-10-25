@@ -1,5 +1,5 @@
 ---
-image: chart
+image: /chart.jpg
 title: Hakkında
 nosuggestions: true
 ---
