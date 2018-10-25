@@ -1026,42 +1026,6 @@ The first (most recent) post in the list is styled to be bigger than the others 
     }
 }
 
-
-/* Full bleed images (#full)
-Super neat trick courtesy of @JoelDrapper
-
-Usage (In Ghost edtior):
-
-![img](/some/image.jpg#full)
-
-*/
-.post-full-content img[src$="#full"] {
-    max-width: none;
-    width: 100vw;
-}
-
-
-/* Image captions
-
-Usage (In Ghost editor):
-
-![img](/some/image.jpg)
-<small>Your image caption</small>
-
-*/
-.post-full-content img + br + small {
-    display: block;
-    margin-top: -3em;
-    margin-bottom: 1.5em;
-    text-align: center;
-}
-
-
-/* Override third party iframe styles */
-.post-full-content iframe {
-    margin: 0 auto !important;
-}
-
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
@@ -1078,10 +1042,6 @@ Usage (In Ghost editor):
 
 .post-full-content blockquote p:last-child {
     margin-bottom: 0;
-}
-
-.post-full-content .fluid-width-video-wrapper {
-    margin: 1.5em 0 3em;
 }
 
 .post-full-content hr {
