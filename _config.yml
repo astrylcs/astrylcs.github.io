@@ -1,8 +1,6 @@
 url: "https://www.astrolojiyolcusu.com"
-
 title: "Astroloji Yolculuğu Akademisi"
 description: "Astroloji ve Esmalarla Şifa"
-
 email_address: astrolojiyolcusu@gmail.com
 facebook_page: https://facebook.com/zeynepbaharoffical
 instagram_page: https://instagram.com/astrolojiyolculugu
@@ -20,6 +18,3 @@ sass:
   style: compressed
 
 str_about: Hakkında
-
-plugins:
-  - jekyll-seo-tag
