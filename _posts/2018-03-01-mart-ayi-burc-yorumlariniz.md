@@ -1,5 +1,5 @@
 ---
-image: zodiac
+image: stars
 tag: MART 2018
 title: Mart Ayı Burç Yorumlarınız
 ---
