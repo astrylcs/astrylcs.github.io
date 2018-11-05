@@ -1,5 +1,5 @@
 ---
-image: zodiac
+image: /zodiac
 tag: TEMMUZ 2018
 title: Ay Tutulmasının ve Merkür Retrosunun Burçlara Etkisi
 ---
