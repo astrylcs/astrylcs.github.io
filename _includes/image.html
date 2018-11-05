@@ -1,15 +1,6 @@
 {%- assign first_char = include.page.image | slice: 0 -%}
 {%- if first_char == "/" -%}
 {{ include.page.image }}
-{%- elsif include.page.ytimg -%}
-https://i3.ytimg.com/vi/{{ include.page.image }}/hqdefault.jpg
 {%- else -%}
-{%- assign images = site.static_files | where_exp: "it", "it.path contains include.page.image" -%}
-{%- assign posts = site.posts | where: "image", include.page.image -%}
-{%- for post in posts -%}
-{%- if post.id == include.page.id -%}
-{%- assign index = forloop.index | modulo: images.size -%}
-{{ images[index].path }}
-{%- endif -%}
-{%- endfor -%}
+https://i3.ytimg.com/vi/{{ include.page.image }}/hqdefault.jpg
 {%- endif -%}
