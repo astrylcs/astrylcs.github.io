@@ -8,7 +8,6 @@
 <style type="text/css">{% capture style %}{% include style.scss %}{% endcapture %}{{ style | scssify }}</style>
 </head>
 <body class="{{ page.class }}">
-    <script>console.log('TAG:{% include tag.html page=page %}');console.log('DATE:{{ page.date }}');</script>
     <div class="site-wrapper">
         <header class="site-header outer" {% if page.class == 'home-template' %}style="background-image: url(/cover.jpg)"{% endif %}>
             <div class="inner">
@@ -65,8 +64,8 @@
                                 <div class="post-card-content">
                                     <a class="post-card-content-link" href="{{ post.url }}">
                                         <header class="post-card-header">
-                                            {% if post.tag %}
-                                                <span class="post-card-tags">{{ post.tag }}</span>
+                                            {% if post.date %}
+                                                <span class="post-card-tags">{% include tag.html page=post %}</span>
                                             {% endif %}
                                             <h2 class="post-card-title">{{ post.title }}</h2>
                                         </header>
@@ -80,7 +79,7 @@
                 {% else %}
                     <article class="post-full {% unless page.image %}no-image{% endunless %}">
                         <header class="post-full-header">
-                            <div class="post-full-meta">{{ page.tag }}</div>
+                            <div class="post-full-meta">{% include tag.html page=page %}</div>
                             <h1 class="post-full-title">{{ page.title }}</h1>
                         </header>
                         <figure class="post-full-image" style="background-image: url({% include image.html page=page %})"></figure>
@@ -103,11 +102,11 @@
             <aside class="read-next outer">
                 <div class="inner">
                     <div class="read-next-feed">
-                        {% if page.tag %}
+                        {% if page.date %}
                             <article class="read-next-card" style="background-image: url(/cover.jpg)">
                                 <header class="read-next-card-header">
                                     <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
-                                    <h3 class="read-next-card-header-title"><a>{{ page.tag }}</a></h3>
+                                    <h3 class="read-next-card-header-title"><a>{% include tag.html page=page %}</a></h3>
                                 </header>
                                 <div class="read-next-divider">
                                     <svg viewBox="0 0 24 24">
@@ -117,7 +116,9 @@
                                 <div class="read-next-card-content">
                                     <ul>
                                         {% for post in site.posts %}
-                                            {% if post.tag == page.tag %}
+                                            {% capture post_tag %}{% include tag.html page=post %}{% endcapture %}
+                                            {% capture page_tag %}{% include tag.html page=page %}{% endcapture %}
+                                            {% if post_tag == page_tag %}
                                                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                                             {% endif %}
                                         {% endfor %}
@@ -135,8 +136,8 @@
                                 <div class="post-card-content">
                                     <a class="post-card-content-link" href="{{ page.next.url }}">
                                         <header class="post-card-header">
-                                            {% if page.next.tag %}
-                                                <span class="post-card-tags">{{ page.next.tag }}</span>
+                                            {% if page.next.date %}
+                                                <span class="post-card-tags">{% include tag.html page=page.next %}</span>
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.next.title }}</h2>
                                         </header>
@@ -154,8 +155,8 @@
                                 <div class="post-card-content">
                                     <a class="post-card-content-link" href="{{ page.previous.url }}">
                                         <header class="post-card-header">
-                                            {% if page.previous.tag %}
-                                                <span class="post-card-tags">{{ page.previous.tag }}</span>
+                                            {% if page.previous.date %}
+                                                <span class="post-card-tags">{% include tag.html page=page.previous %}</span>
                                             {% endif %}
                                             <h2 class="post-card-title">{{ page.previous.title }}</h2>
                                         </header>
