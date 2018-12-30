@@ -8,6 +8,7 @@
 <style type="text/css">{% capture style %}{% include style.scss %}{% endcapture %}{{ style | scssify }}</style>
 </head>
 <body class="{{ page.class }}">
+    <script>console.log('TAG:{% include tag.html page=page %}');console.log('DATE:{{ page.date }}');</script>
     <div class="site-wrapper">
         <header class="site-header outer" {% if page.class == 'home-template' %}style="background-image: url(/cover.jpg)"{% endif %}>
             <div class="inner">
