@@ -91,7 +91,7 @@
                             {% include video.html id=page.image %}
                             <p><br></p>
                             <p id="post-description"></p>
-                            <script>var r=new XMLHttpRequest();r.open('GET','https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8&id={{ page.image }}',true);r.onload=function(){if(r.status>=200&&r.status<400)document.getElementById('post-description').textContent=JSON.parse(r.responseText).items[0].snippet.description.replace('\n','<br>');};r.send();</script>
+                            <script>var r=new XMLHttpRequest();r.open('GET','https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8&id={{ page.image }}',true);r.onload=function(){if(r.status>=200&&r.status<400)document.getElementById('post-description').innerHTML=JSON.parse(r.responseText).items[0].snippet.description.replace('\n','<br>');};r.send();</script>
                             {%- endif -%}
                         </section>
                     </article>
