@@ -85,8 +85,11 @@
                         <figure class="post-full-image" style="background-image: url({% include image.html page=page %})"></figure>
                         <section class="post-full-content">
                             {%- assign first_char = page.image | slice: 0 -%}
-                            {%- if first_char == "/" -%}{{ content }}{%- else -%}
+                            {%- if first_char == "/" -%}
+                            {{ content }}
+                            {%- else -%}
                             {% include video.html id=page.image %}
+                            <p><br></p>
                             <p id="post-description"></p>
                             <script>var r=new XMLHttpRequest();r.open('GET','https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8&id={{ page.image }}',true);r.onload=function(){if(r.status>=200&&r.status<400)document.getElementById('post-description').innerHTML=JSON.parse(r.responseText).items[0].snippet.description;};r.send();</script>
                             {%- endif -%}
