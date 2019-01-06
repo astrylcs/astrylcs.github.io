@@ -97,7 +97,7 @@
                                 r.open('GET','https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8&id={{ page.image }}',true);
                                 r.onload=function(){
                                     if(r.status>=200&&r.status<400)
-                                        document.getElementById('post-description').innerHTML=AutoLinker.link(JSON.parse(r.responseText).items[0].snippet.description.replace(/\n/g,'<br>'));
+                                        document.getElementById('post-description').innerHTML=Autolinker.link(JSON.parse(r.responseText).items[0].snippet.description.replace(/\n/g,'<br>'));
                                 };
                                 r.send();
                             </script>
