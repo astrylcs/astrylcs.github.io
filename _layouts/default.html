@@ -93,6 +93,7 @@
                             <p id="post-description"></p>
                             <script>
                                 var script=document.createElement('script');
+                                script.src='https://cdnjs.cloudflare.com/ajax/libs/autolinker/2.2.1/Autolinker.min.js';
                                 script.onload=function(){
                                     var r=new XMLHttpRequest();
                                     r.open('GET','https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8&id={{ page.image }}',true);
@@ -102,7 +103,6 @@
                                     };
                                     r.send();
                                 };
-                                script.src='https://cdnjs.cloudflare.com/ajax/libs/autolinker/2.2.1/Autolinker.min.js';
                                 document.body.appendChild(script);
                             </script>
                             {%- endif -%}
