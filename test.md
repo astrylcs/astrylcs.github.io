@@ -1,4 +1,5 @@
 ---
+image: /none
 title: Test
 ---
 
