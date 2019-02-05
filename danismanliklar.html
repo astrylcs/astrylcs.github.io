@@ -1,0 +1,20 @@
+---
+layout: post
+title: Danışmanlıklar
+---
+{% for post in site.pages %}
+{% if post.dir == "/hizmetler/" %}
+<article class="post-card no-image">
+  <div class="post-card-content">
+    <a class="post-card-content-link" href="{{ post.url }}">
+      <header class="post-card-header">
+        <h2 class="post-card-title">{{ post.title }}</h2>
+      </header>
+      <section class="post-card-excerpt">
+        <p>{{ post.content }}</p>
+      </section>
+    </a>
+  </div>
+</article>
+{% endif %}
+{% endfor %}

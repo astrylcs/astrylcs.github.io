@@ -1,0 +1,71 @@
+---
+layout: default
+class: home-template
+---
+<div class="post-feed">
+  <div class="post-full-content width-all">
+    <div class="social-posts"></div>
+    <div class="loading">
+      <svg viewBox="0 0 64 64">
+        <circle fill="none" stroke-width="12" stroke-dasharray="120" cx="32" cy="32" r="24"></circle>
+      </svg>
+      <p>Yükleniyor...</p>
+    </div>
+  </div>
+</div>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      version: 'v3.2'
+    });
+    var data = [
+      {%- for id in site.data.posts -%}
+      '{{ id }}',
+      {%- endfor -%}
+    ];
+    var index = 0;
+    var feedElement = document.getElementsByClassName('social-posts')[0];
+    var loadingElement = document.getElementsByClassName('loading')[0];
+    var ticking = false;
+    var loading = false;
+    function onUpdate() {
+      ticking = false;
+      var loadingOffset = loadingElement.getBoundingClientRect().top;
+      if (window.innerHeight <= loadingOffset) return;
+      if (loading) return;
+      var page = document.createElement('div');
+      for (var i = index; i < index + 5; i++) {
+        if (i < data.length) {
+          var id = data[i];
+          var element = document.createElement('div');
+          element.setAttribute('class', 'fb-post');
+          element.setAttribute('data-href', 'https://www.facebook.com/astrolojiyolculugu/posts/' + id);
+          element.setAttribute('data-show-text', 'true');
+          page.appendChild(element);
+        }
+      }
+      feedElement.appendChild(page);
+      index += 5;
+      if (index >= data.length) {
+        loadingElement.innerHTML = "";
+        window.removeEventListener('scroll', requestTick);
+      }
+      loading = true;
+      window.requestAnimationFrame(function () {
+        FB.XFBML.parse(page, function () {
+          loading = false;
+        });
+      });
+    }
+    function requestTick() {
+      if(!ticking) window.requestAnimationFrame(onUpdate);
+      ticking = true;
+    }
+    window.addEventListener('scroll', requestTick, { passive: true });
+    requestTick();
+  };
+  var fjs = document.getElementsByTagName('script')[0];
+  var js = document.createElement('script');
+  js.src = "https://connect.facebook.net/tr_TR/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+</script>

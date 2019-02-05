@@ -1,0 +1,24 @@
+---
+layout: default
+class: home-template
+---
+<div class="post-feed">
+  {% assign videos = site.data.videos | reverse %}
+  {% for video in videos %}
+  <article class="post-card">
+    <a class="post-card-image-link" href="/izle?v={{ video.image }}">
+      <div class="post-card-image" style="background-image: url(https://i3.ytimg.com/vi/{{ video.image }}/hqdefault.jpg)"></div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/izle?v={{ video.image }}">
+        <header class="post-card-header">
+          {% if video.tag %}
+          <span class="post-card-tags">{{ video.tag }}</span>
+          {% endif %}
+          <h2 class="post-card-title">{{ video.title }}</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post-full">
+  <header class="post-full-header">
+    <div class="post-full-meta" id="post-tag"></div>
+    <h1 class="post-full-title" id="post-title"></h1>
+  </header>
+  <figure class="post-full-image" id="post-image"></figure>
+  <section class="post-full-content">
+    <div class="yt-container" id="post-video"></div>
+    <p><br></p>
+    <p id="post-description"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autolinker/2.2.1/Autolinker.min.js"></script>
+    <script>
+      var key = "AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8";
+      var id = new URL(document.URL).searchParams.get("v");
+      document.getElementById("post-image").style.backgroundImage = "url(https://i3.ytimg.com/vi/" + id + "/hqdefault.jpg)";
+      document.getElementById("post-video").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + id + "\" frameborder=\"0\" allow=\"encrypted-media\" allowfullscreen></iframe>";
+      var r = new XMLHttpRequest();
+      r.open('GET', 'https://www.googleapis.com/youtube/v3/videos?part=snippet&key=' + key + '&id=' + id, true);
+      r.onload = function () {
+        if (r.status >= 200 && r.status < 400) {
+          var snippet = JSON.parse(r.responseText).items[0].snippet;
+          document.getElementById('post-title').innerHTML = snippet.title;
+          var date = snippet.publishedAt;
+          var year = date.substring(0, 4);
+          var month = ["", "OCAK", "ŞUBAT", "MART", "NİSAN", "MAYIS", "HAZİRAN", "TEMMUZ", "AĞUSTOS", "EYLÜL", "EKİM", "KASIM", "ARALIK"][parseInt(date.substring(5, 7))];
+          document.getElementById('post-tag').innerHTML = month + " " + year;
+          document.getElementById('post-description').innerHTML = Autolinker.link(snippet.description.replace(/\n/g, '<br>'));
+        }
+      };
+      r.send();
+    </script>
+  </section>
+</article>
