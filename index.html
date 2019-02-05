@@ -1,3 +1,86 @@
 ---
+layout: default
 class: home-template
 ---
+<div class="post-feed">
+  <article class="post-card no-image">
+    <a class="post-card-image-link" href="/danismanliklar">
+      <div class="post-card-image post-card-icon" style="background-color: #673AB7">
+        {% include ic_services.html %}
+      </div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/danismanliklar">
+        <header class="post-card-header">
+          <h2 class="post-card-title">Danışmanlıklar</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  <article class="post-card no-image">
+    <a class="post-card-image-link" href="/hizmetler/egitim">
+      <div class="post-card-image post-card-icon" style="background-color: #FF9800">
+        {% include ic_education.html %}
+      </div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/hizmetler/egitim">
+        <header class="post-card-header">
+          <h2 class="post-card-title">Eğitim</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  <article class="post-card no-image">
+    <a class="post-card-image-link" href="/hizmetler/finansal">
+      <div class="post-card-image post-card-icon" style="background-color: #4CAF50">
+        {% include ic_finance.html %}
+      </div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/hizmetler/finansal">
+        <header class="post-card-header">
+          <h2 class="post-card-title">Finansal Astroloji</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  <article class="post-card no-image">
+    <a class="post-card-image-link" href="/yazilar">
+      <div class="post-card-image post-card-icon" style="background-color: #2196F3">
+        {% include ic_blog.html %}
+      </div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/yazilar">
+        <header class="post-card-header">
+          <h2 class="post-card-title">Yazılar</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  <article class="post-card no-image">
+    <a class="post-card-image-link" href="/videolar">
+      <div class="post-card-image post-card-icon" style="background-color: #F44336">
+        {% include ic_video.html %}
+      </div>
+    </a>
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="/videolar">
+        <header class="post-card-header">
+          <h2 class="post-card-title">Videolar</h2>
+        </header>
+      </a>
+    </div>
+  </article>
+  <article class="post-card no-image">
+    <div class="post-card-content">
+      <div class="post-card-content-link">
+        <header class="post-card-header">
+          <h2 class="post-card-title contact-title">İletişim</h2>
+          {% include contact.html %}
+        </header>
+      </div>
+    </div>
+  </article>
+</div>

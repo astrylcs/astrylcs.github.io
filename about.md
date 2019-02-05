@@ -1,4 +1,5 @@
 ---
+layout: post
 image: /chart.jpg
 title: Hakkında
 ---
