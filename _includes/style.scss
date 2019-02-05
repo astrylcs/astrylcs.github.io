@@ -713,7 +713,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 0.4s ease;
-    transform: translate3D(0, -1px, 0) scale(1.02);
+    //transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
 .post-card-image-link {
@@ -1452,10 +1452,93 @@ The first (most recent) post in the list is styled to be bigger than the others 
 /* 12. Custom Styles
 /* ---------------------------------------------------------- */
 
+.site-title {
+    font-family: 'Berkshire Swash', cursive;
+}
+
 .site-description {
     font-family: 'Charm', cursive;
 }
 
-.site-title {
-    font-family: 'Berkshire Swash', cursive;
+.contact-title {
+    text-align: center;
+}
+
+.contact-link {
+    white-space: nowrap;
+    opacity: 0.8;
+    color: #333;
+}
+
+.contact-link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.contact-link svg {
+    height: 4rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.social-posts {
+    text-align: center;
+}
+
+.fb-post {
+    margin-bottom: 2rem;
+}
+
+.post-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-card-icon svg {
+    height: 12rem;
+    fill: #fff;
+}
+
+.post-card-excerpt {
+    font-family: Georgia, serif;
+    font-size: medium;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 4rem;
+}
+
+.loading svg {
+    margin-right: 1rem;
+    height: 2.5rem;
+    animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading svg circle {
+    stroke: #2196F3;
+}
+
+.loading p {
+    font-family: Helvetica, sans-serif;
+    color: #2196F3;
+    min-width: 0;
+    font-size: 2rem;
+}
+
+.no-box-shadow a {
+    box-shadow: none;
+}
+
+.width-all {
+    width: 100%;
 }
