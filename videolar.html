@@ -3,7 +3,7 @@ layout: default
 class: home-template
 ---
 <div class="post-feed">
-  {% assign videos = site.data.videos | reverse %}
+  {% assign videos = site.data.videos %}
   {% for video in videos %}
   <article class="post-card">
     <a class="post-card-image-link" href="/izle?v={{ video.image }}">
