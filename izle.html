@@ -6,7 +6,7 @@ layout: default
     <div class="post-full-meta" id="post-tag"></div>
     <h1 class="post-full-title" id="post-title"></h1>
   </header>
-  <figure class="post-full-image" id="post-image"></figure>
+<!--   <figure class="post-full-image" id="post-image"></figure> -->
   <section class="post-full-content">
     <div class="yt-container" id="post-video"></div>
     <p><br></p>
@@ -15,7 +15,7 @@ layout: default
     <script>
       var key = "AIzaSyDBpjgIKf3zoP6Wx7L2MGU5443BPzbNLD8";
       var id = new URL(document.URL).searchParams.get("v");
-      document.getElementById("post-image").style.backgroundImage = "url(https://i3.ytimg.com/vi/" + id + "/hqdefault.jpg)";
+//       document.getElementById("post-image").style.backgroundImage = "url(https://i3.ytimg.com/vi/" + id + "/hqdefault.jpg)";
       document.getElementById("post-video").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + id + "\" frameborder=\"0\" allow=\"encrypted-media\" allowfullscreen></iframe>";
       var r = new XMLHttpRequest();
       r.open('GET', 'https://www.googleapis.com/youtube/v3/videos?part=snippet&key=' + key + '&id=' + id, true);
