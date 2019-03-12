@@ -1,6 +1,12 @@
-import requests
+import os, requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
+
+directory = os.path.dirname(os.path.realpath(__file__))
+data_path = os.path.join(directory, '_data', 'posts.yml')
+
+with open(data_path, 'r') as f:
+    last_line = f.readline().strip()
 
 html = requests.get('https://www.facebook.com/astrolojiyolculugu/posts').content
 
@@ -19,4 +25,7 @@ for link in links:
         value = splits[-1]
         if splits[-1] == '':
             value = splits[-2]
-        print('- '+value)
+        line = '- ' + value
+        if last_line == line:
+            break
+        print(line)
