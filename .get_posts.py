@@ -17,6 +17,7 @@ soup = BeautifulSoup(html, 'html.parser')
 
 links = soup.findAll('a', {'class': '_5pcq'})
 
+flag = False
 for link in links:
     href = link['href']
     if href.startswith('/astrolojiyolculugu'):
@@ -27,5 +28,8 @@ for link in links:
             value = splits[-2]
         line = '- ' + value
         if last_line == line:
+            flag = True
             break
         print(line)
+if not flag:
+    print("...")
