@@ -10,26 +10,20 @@ with open(data_path, 'r') as f:
 
 html = requests.get('https://www.facebook.com/astrolojiyolculugu/posts').content
 
-# with open('../../Desktop/a.html') as f:
+# with open('./Desktop/a.html') as f:
 #     html = f.read()
 
 soup = BeautifulSoup(html, 'html.parser')
 
 links = soup.findAll('a', {'class': '_5pcq'})
+paths = [urlparse(link['href']).path for link in links]
+values = [path.rstrip('/').split('/')[-1] for path in paths]
+lines = ['- ' + value for value in values if value]
 
-flag = False
-for link in links:
-    href = link['href']
-    if href.startswith('/astrolojiyolculugu'):
-        path = urlparse(href).path
-        splits = path.split('/')
-        value = splits[-1]
-        if splits[-1] == '':
-            value = splits[-2]
-        line = '- ' + value
-        if last_line == line:
-            flag = True
-            break
-        print(line)
-if not flag:
-    print("...")
+try:
+    index = lines.index(last_line)
+except ValueError:
+    print('...')
+    index = len(lines)
+
+print(*lines[:index], sep='\n')
