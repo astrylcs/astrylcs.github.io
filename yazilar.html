@@ -15,14 +15,8 @@ class: home-template
 </div>
 <script>
   window.fbAsyncInit = function () {
-    FB.init({
-      version: 'v3.2'
-    });
-    var data = [
-      {%- for id in site.data.posts -%}
-      '{{ id }}',
-      {%- endfor -%}
-    ];
+    FB.init({ version: 'v3.2' });
+    var data = [];
     var index = 0;
     var feedElement = document.getElementsByClassName('social-posts')[0];
     var loadingElement = document.getElementsByClassName('loading')[0];
@@ -61,8 +55,16 @@ class: home-template
       if(!ticking) window.requestAnimationFrame(onUpdate);
       ticking = true;
     }
-    window.addEventListener('scroll', requestTick, { passive: true });
-    requestTick();
+    var r = new XMLHttpRequest();
+    r.open('GET', 'https://astrylcs.appspot.com/posts', true);
+    r.onload = function () {
+      if (r.status >= 200 && r.status < 400) {
+        data = JSON.parse(r.responseText);
+        window.addEventListener('scroll', requestTick, { passive: true });
+        requestTick();
+      }
+    };
+    r.send();
   };
   var fjs = document.getElementsByTagName('script')[0];
   var js = document.createElement('script');
